@@ -1,0 +1,5 @@
+*/test
+*/tmc
+*/src/__pycache__
+*.json
+*.yml
