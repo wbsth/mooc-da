@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 
 def positive_list(L):
-    return []
+    def is_positive(number):
+        return number > 0
+
+    return(list(filter(is_positive, L)))
+
 
 def main():
     pass
