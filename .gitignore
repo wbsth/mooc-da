@@ -3,3 +3,5 @@
 */src/__pycache__
 *.json
 *.yml
+*.png
+*.csv
