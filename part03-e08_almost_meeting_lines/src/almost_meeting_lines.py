@@ -3,7 +3,14 @@
 import numpy as np
 
 def almost_meeting_lines(a1, b1, a2, b2):
-    return []
+    a = np.array([[a1, -1], [a2, -1]])
+    b = np.array([- b1, - b2])
+    try:
+        return (np.linalg.solve(a, b), True)
+    except:
+        print(np.linalg.lstsq(a, b, rcond=None))
+        return (np.linalg.lstsq(a, b, rcond=None)[0] ,False)
+
 
 def main():
     a1=1
