@@ -4,10 +4,13 @@ import pandas as pd
 import numpy as np
 
 def special_missing_values():
-    return None
+    df = pd.read_csv('src/UK-top40-1964-1-2.tsv', sep='\t')
+    existing = df[~df['LW'].isin(['New', 'Re'])]
+    dropped = existing[existing['Pos'] > existing['LW'].astype(int)]
+    return dropped
 
 def main():
-    return
+    print(special_missing_values())
 
 if __name__ == "__main__":
     main()
