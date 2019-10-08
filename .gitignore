@@ -10,8 +10,8 @@
 *.html
 *.jar
 /.idea/*
-.xml
-.gz
-.bz2
-.sh
-.seq
+*.xml
+*.gz
+*.bz2
+*.sh
+*.seq
