@@ -2,6 +2,7 @@
 */tmc
 */src/__pycache__
 */src/words
+*/helper
 *.json
 *.yml
 *.png
@@ -15,3 +16,4 @@
 *.bz2
 *.sh
 *.seq
+*.pyt
